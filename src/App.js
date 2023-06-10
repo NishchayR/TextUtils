@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Alert from "./components/Alert";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextBox from "./components/TextBox";
 import {
@@ -54,9 +54,9 @@ function App() {
       <div className="container my-3" ><Alert alert={alert}/></div>
       <div className="container my-3" >
          <Switch>
-          <Route exact path="/about">
+          {/* <Route exact path="/about">
             <About mode={mode} aboutheading = "About Us"/>
-          </Route>
+          </Route> */}
           <Route exact path="/">
             <TextBox mode={mode} showAlert={showAlert} heading="Enter your text to analyze below"/>
           </Route>
@@ -68,3 +68,6 @@ function App() {
 }
 
 export default App;
+
+// uncomment about from route and navbar/
+// and import about in app.js
