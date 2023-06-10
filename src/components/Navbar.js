@@ -26,11 +26,13 @@ export default function Navbar(props) {
               Home
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="/about">
               {props.aboutText}
             </a>
-          </li>
+          </li> */}
+
+
         </ul>
       </div>
       <div className={`form-check form-switch text-${props.mode==='light' ? 'dark':'light'}`}>
